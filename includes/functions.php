@@ -489,8 +489,6 @@ function wbz404_ProcessRedirect( $redirect ) {
 		if ( $redirect['type'] == WBZ404_EXTERNAL ) {
 			//It's a external url setup by the user
 			wbz404_logRedirectHit( $redirect['id'], $redirect['final_dest'] );
-			wp_redirect( esc_url( $redirect['final_dest'] ), esc_html( $redirect['code'] ) );
-			exit;
 		} else {
 			$key="";
 			if ( $redirect['type'] == WBZ404_POST ) {
@@ -503,8 +501,6 @@ function wbz404_ProcessRedirect( $redirect ) {
 			if ( $key != "" ) {
 				$permalink = wbz404_permalinkInfo( $key, 0 );
 				wbz404_logRedirectHit( $redirect['id'], $permalink['link'] );
-				wp_redirect( esc_url( $permalink['link'] ), esc_html( $redirect['code'] ) );
-				exit;
 			}
 		}
 	} else {

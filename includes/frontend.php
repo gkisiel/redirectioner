@@ -104,8 +104,6 @@ function wbz404_process404() {
 			if ( $found == 1 ) {
 				//Perform actual redirect
 				wbz404_logRedirectHit( $redirect_id, $permalink['link'] );
-				wp_redirect( esc_url( $permalink['link'] ), esc_html( $options['default_redirect'] ) );
-				exit;
 			} else {
 				//Check for incoming 404 settings
 				if ( isset( $options['capture_404'] ) && $options['capture_404'] == '1' ) {
@@ -147,8 +145,6 @@ function wbz404_process404() {
 						} else {
 							$redirect_id = wbz404_setupRedirect( esc_url( $requestedURL ), WBZ404_AUTO, WBZ404_POST, $permalink['id'], $options['default_redirect'], 0 );
 							wbz404_logRedirectHit( $redirect_id, $permalink['link'] );
-							wp_redirect( esc_url( $permalink['link'] ), esc_html( $options['default_redirect'] ) );
-							exit;
 						}
 					}
 				}
@@ -217,8 +213,6 @@ function wbz404_redirectCanonical( $redirect, $request ) {
 					if ( $requestedURL != $perma_link ) {
 						$redirect_id = wbz404_setupRedirect( $requestedURL, WBZ404_AUTO, WBZ404_POST, $theID, $options['default_redirect'], 0 );
 						wbz404_logRedirectHit( $redirect_id, $perma_link );
-						wp_redirect( esc_url( $perma_link ), esc_html( $options['default_redirect'] ) );
-						exit;
 					}
 				}
 			}

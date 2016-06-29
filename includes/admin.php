@@ -1309,8 +1309,7 @@ function wbz404_adminLogsPage() {
 		if ( $row['action'] == "404" ) {
 			echo __( 'Displayed 404 Page', '404-redirected' );
 		} else {
-			echo __( 'Redirect to', '404-redirected' ) . " ";
-			echo "<a href=\"" . esc_url( $row['action'] ) . "\" title=\"" . __( 'Visit', '404-redirected' ) . ": " . esc_attr( $row['action'] ) . "\" target=\"_blank\">" . esc_html( $row['action'] ) . "</a>";
+			echo __( 'Displayed Page', '404-redirected' ) . " ";
 		}
 		echo "</td>";
 		echo "<td>" . esc_html( date( 'Y/m/d h:i:s A', $row['timestamp'] ) ) . "</td>";
