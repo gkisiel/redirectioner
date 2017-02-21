@@ -71,7 +71,15 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 
 == Changelog ==
 
-= Version 1.4.7 = 
+= Version 1.4.8 =
+* Rename to Redirectioner
+* Update branding links
+* Fixed broken pagination counts. [#17](https://github.com/ThemeMix/redirectioner/issues/17)
+* Fixed PHP notices on admin screen. [#24](https://github.com/ThemeMix/redirectioner/issues/24)
+* Fixed line-breaks in admin notices. [#25](https://github.com/ThemeMix/redirectioner/issues/25)
+* Cleaned up query arguments handling. [#28](https://github.com/ThemeMix/redirectioner/issues/28)
+
+= Version 1.4.7 =
 * Fixed too strict data sanitation for the `wbz404_suggestions()` template tag
 * Fixed CSS class for suggested 404s div wrapper.
 

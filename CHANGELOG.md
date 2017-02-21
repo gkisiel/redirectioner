@@ -1,8 +1,12 @@
 # Changelog #
 
-## Trunk ###
+## Version 1.4.8 ##
 * Rename to Redirectioner
 * Update branding links
+* Fixed broken pagination counts. (#17)
+* Fixed PHP notices on admin screen. (#24)
+* Fixed line-breaks in admin notices. (#25)
+* Cleaned up query arguments handling. (#28)
 
 ## Version 1.4.7 ##
 * Fixed too strict data sanitation for the `wbz404_suggestions()` template tag
