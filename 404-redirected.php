@@ -37,7 +37,7 @@
 define( 'WBZ404_URL', plugin_dir_url( __FILE__ ) );
 define( 'WBZ404_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WBZ404_NAME', plugin_basename( __FILE__ ) );
-define( 'WBZ404_VERSION', '1.4.7' );
+define( 'WBZ404_VERSION', '1.4.8' );
 define( 'WBZ404_HOME', 'https://redirectioner.com/' );
 define( 'WBZ404_TRANS', 'wbz404_redirected' );
 
