@@ -790,7 +790,12 @@ function wbz404_adminHeader( $sub = 'list', $message = '' ) {
 	}
 	echo "<h2>" . __( '404 Redirected', '404-redirected' ) . esc_html( $header ) . "</h2>";
 	if ( $message != "" ) {
-		echo "<div class=\"message updated\"><p>" . esc_html( $message ) . "</p></div>";
+		$allowed_tags = [
+			'br'     => [],
+			'em'     => [],
+			'strong' => [],
+		];
+		echo "<div class=\"message updated\"><p>" . wp_kses( $message, $allowed_tags ) . "</p></div>";
 	}
 	echo __( 'by', '404-redirected' ) . " <a href=\"https://redirectioner.com\" title=\"Redirectioner\" target=\"_blank\">Redirectioner</a><br>";
 	echo __( 'Version', '404-redirected' ) . ": " . WBZ404_VERSION . " | ";
