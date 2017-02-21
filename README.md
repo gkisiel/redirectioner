@@ -4,10 +4,10 @@ Creates automatic redirects for 404 traffic and page suggestions when matches ar
 
 ## Description ##
 
-404 Redirected allows WordPress admins to have control over their dead links and redirects from inside the admin panel. 404 Redirected records all URLs that users have visited and allows the admin to easily create 301 and 302 redirects to valid pages on their site. Redirects can also be created based on the best possible match for the URL the visitor was most likely trying to reach.
+Redirectioner allows WordPress admins to have control over their dead links and redirects from inside the admin panel. Redirectioner records all URLs that users have visited and allows the admin to easily create 301 and 302 redirects to valid pages on their site. Redirects can also be created based on the best possible match for the URL the visitor was most likely trying to reach.
 
 > <strong>Support & Bug Reports</strong><br>
-> If you're in need of support or would like to file a bug report, please head over to our Github repository and [create a new issue.](https://github.com/defries/404-redirected/issues)
+> If you're in need of support or would like to file a bug report, please head over to our Github repository and [create a new issue.](https://github.com/ThemeMix/redirectioner/issues)
 >
 
 ### Features: ###
@@ -29,11 +29,11 @@ Convert your 404 traffic by providing your site visitors with a better browsing 
 
 ## Installation ##
 
-Installation of 404 Redirect is simple:
+Installation of Redirectioner is simple:
 
-1. Unzip `404-redirected.zip` and upload contents to the `/wp-content/plugins/` directory
+1. Unzip `redirectioner.zip` and upload contents to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress Admin
-1. Use the `Settings -> 404 Redirected` options page to enable desired features.
+1. Use the `Settings -> Redirectioner` options page to enable desired features.
 
 For the `suggested pages` feature to work you need to edit your 404.php template file to include the following code:
 `<?php if (function_exists( 'wbz404_suggestions' ) ) { wbz404_suggestions(); } ?>`
@@ -50,7 +50,7 @@ No, there should be no noticeable slow down when running the plugin on your site
 
 ### Will this plugin redirect my pages if I change my permalinks structure? ###
 
-Yes! 404 Redirected records the page/post ID number and looks up the most current permalink before redirecting the user.
+Yes! Redirectioner records the page/post ID number and looks up the most current permalink before redirecting the user.
 
 ### Can I redirect all 404's to a particular page? ###
 
@@ -71,6 +71,18 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 
 ## Upgrade Notice ##
 
+### Version 1.4.8 ###
+* Rename to Redirectioner
+* Update branding links
+* Fixed broken pagination counts. [#17](https://github.com/ThemeMix/redirectioner/issues/17)
+* Fixed PHP notices on admin screen. [#24](https://github.com/ThemeMix/redirectioner/issues/24)
+* Fixed line-breaks in admin notices. [#25](https://github.com/ThemeMix/redirectioner/issues/25)
+* Cleaned up query arguments handling. [#28](https://github.com/ThemeMix/redirectioner/issues/28)
+
+### Version 1.4.7 ###
+* Fixed too strict data sanitation for the `wbz404_suggestions()` template tag
+* Fixed CSS class for suggested 404s div wrapper.
+
 ### Version 1.4.6 ###
 * Fixed bug where query vars were being stripped
 * Fixed a bug caused by plugin incorrectly injecting end-points turning up as 404s
@@ -78,10 +90,10 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 * General code improvements
 
 ### Version 1.4.4 ###
-* Fixed a [SQL bug](https://github.com/defries/404-redirected/issues/7)
-* Fixed a bug where [logs wouldn't get deleted](https://github.com/defries/404-redirected/issues/8)
-* Fixed a bug where [deactivating and activating the plugin would reset the stats to 0](https://github.com/defries/404-redirected/issues/9)
-* Fixed various [PHP notices](https://github.com/defries/404-redirected/issues/10)
+* Fixed a [SQL bug](https://github.com/ThemeMix/redirectioner/issues/7)
+* Fixed a bug where [logs wouldn't get deleted](https://github.com/ThemeMix/redirectioner/issues/8)
+* Fixed a bug where [deactivating and activating the plugin would reset the stats to 0](https://github.com/ThemeMix/redirectioner/issues/9)
+* Fixed various [PHP notices](https://github.com/ThemeMix/redirectioner/issues/10)
 
 ### Version 1.3 ###
 
