@@ -1,4 +1,4 @@
-=== 404 Redirected ===
+=== Redirectioner ===
 Contributors: DeFries
 Donate link: https://remkusdevries.com/donate/
 Tags: 404, page not found, redirect, 301, 302, permanent redirect, temporary redirect, error
@@ -14,7 +14,7 @@ Creates automatic redirects for 404 traffic and page suggestions when matches ar
 404 Redirected allows WordPress admins to have control over their dead links and redirects from inside the admin panel. 404 Redirected records all URLs that users have visited and allows the admin to easily create 301 and 302 redirects to valid pages on their site. Redirects can also be created based on the best possible match for the URL the visitor was most likely trying to reach.
 
 > <strong>Support & Bug Reports</strong><br>
-> If you're in need of support or would like to file a bug report, please head over to our Github repository and [create a new issue.](https://github.com/defries/404-redirected/issues)
+> If you're in need of support or would like to file a bug report, please head over to our Github repository and [create a new issue.](https://github.com/thememix/redirectioner/issues)
 >
 
 = Features: =
@@ -71,7 +71,15 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 
 == Changelog ==
 
-= Version 1.4.7 = 
+= Version 1.4.8 =
+* Rename to Redirectioner
+* Update branding links
+* Fixed broken pagination counts. [#17](https://github.com/ThemeMix/redirectioner/issues/17)
+* Fixed PHP notices on admin screen. [#24](https://github.com/ThemeMix/redirectioner/issues/24)
+* Fixed line-breaks in admin notices. [#25](https://github.com/ThemeMix/redirectioner/issues/25)
+* Cleaned up query arguments handling. [#28](https://github.com/ThemeMix/redirectioner/issues/28)
+
+= Version 1.4.7 =
 * Fixed too strict data sanitation for the `wbz404_suggestions()` template tag
 * Fixed CSS class for suggested 404s div wrapper.
 
