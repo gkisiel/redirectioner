@@ -6,7 +6,7 @@
 	Author:      ThemeMix
 	Author URI:  https://thememix.com
 
-	Version: 1.4.7
+	Version: 1.4.8
 
 	License:     GPL2
 	License URI: https://www.gnu.org/licenses/gpl-2.0.html
