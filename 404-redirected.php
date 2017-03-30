@@ -6,7 +6,7 @@
 	Author:      ThemeMix
 	Author URI:  https://thememix.com
 
-	Version: 1.4.8
+	Version: 1.4.9
 
 	License:     GPL2
 	License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,7 +37,7 @@
 define( 'WBZ404_URL', plugin_dir_url( __FILE__ ) );
 define( 'WBZ404_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WBZ404_NAME', plugin_basename( __FILE__ ) );
-define( 'WBZ404_VERSION', '1.4.8' );
+define( 'WBZ404_VERSION', '1.4.9' );
 define( 'WBZ404_HOME', 'https://redirectioner.com/' );
 define( 'WBZ404_TRANS', 'wbz404_redirected' );
 
