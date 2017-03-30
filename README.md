@@ -71,6 +71,9 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 
 ## Upgrade Notice ##
 
+## Version 1.4.9 ##
+* Fixed parse error on PHP <5.4 due to use of short array syntax. [#30](https://github.com/ThemeMix/redirectioner/issues/30)
+
 ### Version 1.4.8 ###
 * Rename to Redirectioner
 * Update branding links

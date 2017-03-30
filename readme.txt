@@ -3,9 +3,9 @@ Contributors: DeFries
 Donate link: https://remkusdevries.com/donate/
 Tags: 404, page not found, redirect, 301, 302, permanent redirect, temporary redirect, error
 Requires at least: 3.1
-Version: 1.4.8
+Version: 1.4.9
 Tested up to: 4.7.3
-Stable tag: 1.4.8
+Stable tag: 1.4.9
 
 Creates automatic redirects for 404 traffic and page suggestions when matches are not found providing better service to your web visitors.
 
@@ -70,6 +70,9 @@ No, that's not what this plugin is for. This plugin is designed to make your vis
 3. Create New Redirect
 
 == Changelog ==
+
+= Version 1.4.9 =
+* Fixed parse error on PHP <5.4 due to use of short array syntax. [#30](https://github.com/ThemeMix/redirectioner/issues/30)
 
 = Version 1.4.8 =
 * Rename to Redirectioner
