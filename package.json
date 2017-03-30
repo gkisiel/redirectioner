@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/defries/404-redirected"
+    "url": "git+https://github.com/ThemeMix/redirectioner"
   },
   "keywords": [
     "plugin"
@@ -39,7 +39,7 @@
   "author": "Remkus de Vries",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/defries/404-redirected/issues"
+    "url": "https://github.com/ThemeMix/redirectioner/issues"
   },
-  "homepage": "https://github.com/defries/404-redirected"
+  "homepage": "https://github.com/ThemeMix/redirectioner"
 }
